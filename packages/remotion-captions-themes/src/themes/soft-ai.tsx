@@ -52,7 +52,6 @@ export const SoftAITheme: React.FC<InternalThemeProps> = ({
         const isActive = time >= word.start && time < word.end;
         const wordStartFrame = Math.round(word.start * fps);
 
-        // Soft AI utilizes a cinematic blur-in and fade reveal on entrance
         const relativeFrame = frame - wordStartFrame;
         const opacity = interpolate(relativeFrame, [0, 10], [0, 1], {
           extrapolateRight: "clamp",
@@ -61,9 +60,8 @@ export const SoftAITheme: React.FC<InternalThemeProps> = ({
           extrapolateRight: "clamp",
         });
 
-        const color = isActive
-          ? (secondaryColor !== "#FFD700" ? secondaryColor : "#60a5fa")
-          : primaryColor;
+        // Use passed colors directly
+        const color = isActive ? secondaryColor : primaryColor;
 
         return (
           <span

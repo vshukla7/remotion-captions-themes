@@ -129,19 +129,12 @@ export default function App() {
               <option value="karaoke">🎤 Karaoke Theme</option>
               <option value="hustle">⚡ Hustle Theme</option>
               <option value="grape">🍇 Grape Boxed Theme</option>
-              <option value="karl">👤 Karl Spring Pop Theme</option>
               <option value="beast">🦁 MrBeast Bold Theme</option>
-              <option value="vibe">🌀 Vibe Chaotic Theme</option>
-              <option value="contrast">🌓 Contrast Dual Font Theme</option>
               <option value="poppin">💥 Poppins Bold Theme</option>
               <option value="capcut">🎬 CapCut Dynamic Theme</option>
               <option value="soft-ai">❄️ Soft AI Blur Theme</option>
               <option value="gaming-stream">🎮 Gaming Stream Glow Theme</option>
-              <option value="reel-punch">🥊 Reel Punch Glitch Theme</option>
               <option value="simple-one-word">🔤 Simple One Word Theme</option>
-              <option value="fadeSlide">🚀 Fade Slide Theme (Boilerplate)</option>
-              <option value="typewriter">⌨️ Typewriter Theme (Boilerplate)</option>
-              <option value="bounce">🏀 Bounce Theme (Boilerplate)</option>
               <option value="kinetic-01">📐 Kinetic 01 (Boilerplate)</option>
               <option value="kinetic-02">📏 Kinetic 02 (Boilerplate)</option>
             </select>

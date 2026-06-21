@@ -68,7 +68,6 @@ export const CapCutTheme: React.FC<InternalThemeProps> = ({
         const isActive = time >= word.start && time < word.end;
         const wordStartFrame = Math.round(word.start * fps);
 
-        // Slide-up and fade-in animation on individual word entrance
         const wordRelativeFrame = frame - wordStartFrame;
         const wordOpacity = interpolate(wordRelativeFrame, [0, 8], [0, 1], {
           extrapolateRight: "clamp",
@@ -77,9 +76,8 @@ export const CapCutTheme: React.FC<InternalThemeProps> = ({
           extrapolateRight: "clamp",
         });
 
-        const color = isActive
-          ? (secondaryColor !== "#FFD700" ? secondaryColor : "#facc15")
-          : primaryColor;
+        // Use passed colors directly
+        const color = isActive ? secondaryColor : primaryColor;
 
         const transform = isActive ? `scale(${1.15})` : `scale(1.0)`;
 

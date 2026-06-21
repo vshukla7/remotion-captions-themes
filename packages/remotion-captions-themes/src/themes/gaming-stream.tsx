@@ -52,7 +52,6 @@ export const GamingStreamTheme: React.FC<InternalThemeProps> = ({
         const isActive = time >= word.start && time < word.end;
         const wordStartFrame = Math.round(word.start * fps);
 
-        // Gaming Stream uses a futuristic fast scale-in/zoom-in zoom pop on entrance
         const relativeFrame = frame - wordStartFrame;
         const scale = interpolate(relativeFrame, [0, 8], [0.5, 1.0], {
           extrapolateRight: "clamp",
@@ -61,11 +60,9 @@ export const GamingStreamTheme: React.FC<InternalThemeProps> = ({
           extrapolateRight: "clamp",
         });
 
-        const color = isActive
-          ? (secondaryColor !== "#FFD700" ? secondaryColor : "#22d3ee")
-          : primaryColor;
-
-        const glowColor = isActive ? "rgba(34,211,238,0.5)" : "rgba(0,255,255,0.25)";
+        // Use passed colors directly
+        const color = isActive ? secondaryColor : primaryColor;
+        const glowColor = isActive ? secondaryColor : "transparent";
 
         return (
           <span
@@ -76,7 +73,7 @@ export const GamingStreamTheme: React.FC<InternalThemeProps> = ({
               fontSize: scaledFontSize,
               fontWeight: 900,
               textTransform: "uppercase",
-              textShadow: `0 0 ${20 * scaleFactor}px ${glowColor}`,
+              textShadow: isActive ? `0 0 ${20 * scaleFactor}px ${glowColor}` : "none",
               opacity,
               transform: `scale(${scale})`,
               display: "inline-block",

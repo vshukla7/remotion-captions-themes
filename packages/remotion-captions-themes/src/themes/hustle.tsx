@@ -53,7 +53,7 @@ export const HustleTheme: React.FC<InternalThemeProps> = ({
       {activeLine.words.map((word, index) => {
         const isActive = time >= word.start && time < word.end;
 
-        const color = isActive ? (secondaryColor !== "#FFD700" ? secondaryColor : "#4ade80") : primaryColor;
+        const color = isActive ? secondaryColor : primaryColor;
         const stroke = isActive ? activeStrokeWidth : strokeWidth;
 
         return (

@@ -51,9 +51,8 @@ export const PoppinTheme: React.FC<InternalThemeProps> = ({
       {activeLine.words.map((word, index) => {
         const isActive = time >= word.start && time < word.end;
 
-        const color = isActive
-          ? (secondaryColor !== "#FFD700" ? secondaryColor : "#ffff00")
-          : primaryColor;
+        // Use passed colors directly
+        const color = isActive ? secondaryColor : primaryColor;
 
         return (
           <span

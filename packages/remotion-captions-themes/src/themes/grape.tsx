@@ -41,6 +41,12 @@ export const GrapeTheme: React.FC<InternalThemeProps> = ({
   const relativeFrame = frame - Math.round(lineStart * fps);
   const opacity = interpolate(relativeFrame, [0, 30], [0, 1], { extrapolateRight: "clamp" });
 
+  // Custom background color matches passed primaryColor
+  const backgroundColor = primaryColor;
+  // If primary background is white/light, we use dark text for base, otherwise white text
+  const isLightBg = primaryColor.toLowerCase() === "#ffffff" || primaryColor.toLowerCase() === "#fff";
+  const baseTextColor = isLightBg ? "#111827" : "#ffffff";
+
   return (
     <div
       style={{
@@ -49,7 +55,7 @@ export const GrapeTheme: React.FC<InternalThemeProps> = ({
         justifyContent: "center",
         alignItems: "center",
         gap: `${10 * scaleFactor}px ${18 * scaleFactor}px`,
-        background: primaryColor === "#FFFFFF" ? "#FFFFFF" : primaryColor,
+        background: backgroundColor,
         padding: `${12 * scaleFactor}px ${36 * scaleFactor}px`,
         borderRadius: `${8 * scaleFactor}px`,
         boxShadow: `0 ${20 * scaleFactor}px ${40 * scaleFactor}px rgba(0,0,0,0.3)`,
@@ -61,10 +67,7 @@ export const GrapeTheme: React.FC<InternalThemeProps> = ({
       {activeLine.words.map((word, index) => {
         const isActive = time >= word.start && time < word.end;
 
-        // Base text is dark (so it's visible on white background) or secondaryColor on active
-        const color = isActive
-          ? (secondaryColor !== "#FFD700" ? secondaryColor : "#6366f1")
-          : "#111827";
+        const color = isActive ? secondaryColor : baseTextColor;
 
         return (
           <span

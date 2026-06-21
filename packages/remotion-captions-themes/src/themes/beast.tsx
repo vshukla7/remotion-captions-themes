@@ -3,8 +3,6 @@ import { useCurrentFrame, useVideoConfig, spring } from "remotion";
 import { InternalThemeProps } from "../types";
 
 export const BeastTheme: React.FC<InternalThemeProps> = ({
-  primaryColor,
-  secondaryColor,
   data,
   fontSize,
 }) => {
@@ -35,7 +33,8 @@ export const BeastTheme: React.FC<InternalThemeProps> = ({
   const scaleFactor = width / 1080;
   const baseSize = typeof fontSize === "number" ? fontSize : 92;
   const scaledFontSize = `${baseSize * scaleFactor}px`;
-  const strokeWidth = `${10 * scaleFactor}px`;
+  const strokeWidth = `${12 * scaleFactor}px`;
+  const shadowOffset = `${6 * scaleFactor}px`;
 
   return (
     <div
@@ -53,16 +52,14 @@ export const BeastTheme: React.FC<InternalThemeProps> = ({
         const isActive = time >= word.start && time < word.end;
         const wordStartFrame = Math.round(word.start * fps);
 
-        // MrBeast styling includes a slight spring tilt on active word
         const pop = spring({
           frame: frame - wordStartFrame,
           fps,
           config: { damping: 10, stiffness: 180 },
         });
 
-        const color = isActive
-          ? (secondaryColor !== "#FFD700" ? secondaryColor : "#ffff00")
-          : primaryColor;
+        // Official MrBeast colors: white base, yellow active
+        const color = isActive ? "#ffff00" : "#ffffff";
 
         const transform = isActive
           ? `scale(${1.0 + pop * 0.15}) rotate(-2deg)`
@@ -73,13 +70,14 @@ export const BeastTheme: React.FC<InternalThemeProps> = ({
             key={index}
             style={{
               color,
-              fontFamily: '"Montserrat", "Arial Black", sans-serif',
+              fontFamily: '"Komika Axis", "Montserrat", "Arial Black", sans-serif',
               fontSize: scaledFontSize,
               fontWeight: 900,
               fontStyle: "italic",
               textTransform: "uppercase",
               letterSpacing: `-${2 * scaleFactor}px`,
               WebkitTextStroke: `${strokeWidth} #000000`,
+              textShadow: `${shadowOffset} ${shadowOffset} 0px #000000`,
               paintOrder: "stroke fill",
               transform,
               display: "inline-block",
