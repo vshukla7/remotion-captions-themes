@@ -451,7 +451,8 @@ export const Kinetic01: React.FC<InternalThemeProps> = ({
   });
 
   // Decide line-wide animation category deterministically based on line index
-  const animType = activeLineIdx % 3; // 0 = none, 1 = slide up, 2 = fade
+  // If the active group only has a single word, force the slide up animation (animType = 1)
+  const animType = activeGroup.length === 1 ? 1 : (activeLineIdx % 3); // 0 = none, 1 = slide up, 2 = fade
 
   return (
     <div
