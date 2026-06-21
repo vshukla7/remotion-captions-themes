@@ -75,7 +75,7 @@ export default function App() {
             data: sampleCaptions,
             fontSize,
           }}
-          durationInFrames={270}
+          durationInFrames={490}
           fps={30}
           compositionWidth={1280}
           compositionHeight={720}
