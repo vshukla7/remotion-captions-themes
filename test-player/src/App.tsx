@@ -131,7 +131,7 @@ export default function App() {
               <option value="grape">🍇 Grape Boxed Theme</option>
               <option value="beast">🦁 MrBeast Bold Theme</option>
               <option value="poppin">💥 Poppins Bold Theme</option>
-              <option value="capcut">🎬 CapCut Dynamic Theme</option>
+              <option value="aarit">🎬 Aarit Theme</option>
               <option value="soft-ai">❄️ Soft AI Blur Theme</option>
               <option value="gaming-stream">🎮 Gaming Stream Glow Theme</option>
               <option value="simple-one-word">🔤 Simple One Word Theme</option>

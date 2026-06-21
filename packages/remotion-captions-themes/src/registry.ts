@@ -10,7 +10,7 @@ import { HustleTheme } from "./themes/hustle";
 import { GrapeTheme } from "./themes/grape";
 import { BeastTheme } from "./themes/beast";
 import { PoppinTheme } from "./themes/poppin";
-import { CapCutTheme } from "./themes/capcut";
+import { AaritTheme } from "./themes/aarit";
 import { SoftAITheme } from "./themes/soft-ai";
 import { GamingStreamTheme } from "./themes/gaming-stream";
 import { SimpleOneWordTheme } from "./themes/simple-one-word";
@@ -26,7 +26,7 @@ export const themeRegistry: Record<string, React.FC<InternalThemeProps>> = {
   grape: GrapeTheme,
   beast: BeastTheme,
   poppin: PoppinTheme,
-  capcut: CapCutTheme,
+  aarit: AaritTheme,
   "soft-ai": SoftAITheme,
   "gaming-stream": GamingStreamTheme,
   "simple-one-word": SimpleOneWordTheme,
