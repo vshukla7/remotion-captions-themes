@@ -1,0 +1,12 @@
+{
+  "name": "remotion-captions-workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "test-player"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=test-player",
+    "build": "npm run build --workspaces --if-present"
+  }
+}
