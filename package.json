@@ -1,6 +1,7 @@
 {
-  "name": "remotion-captions-workspace",
-  "private": true,
+  "name": "remotion-captions-themes",
+  "version": "1.0.0",
+  "private": false,
   "workspaces": [
     "packages/*",
     "test-player"

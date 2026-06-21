@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+
+# OS-specific files
+.DS_Store
+
+# Build outputs
+dist/
+build/
+
+# Cache directories
+.cache/
+.remotion/
+
+# Log files
+*.log
+
+# Testing files & specific directories
+test-player/
