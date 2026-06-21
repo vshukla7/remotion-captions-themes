@@ -6,6 +6,7 @@ export const PopTheme: React.FC<InternalThemeProps> = ({
   primaryColor,
   secondaryColor,
   data,
+  fontSize,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -30,6 +31,8 @@ export const PopTheme: React.FC<InternalThemeProps> = ({
   const activeLine = data.lines[activeLineIdx] || data.lines[0];
   if (!activeLine || !activeLine.words.length) return null;
 
+  const size = typeof fontSize === "number" ? `${fontSize}px` : (fontSize ?? "4.5rem");
+
   return (
     <div
       style={{
@@ -38,7 +41,7 @@ export const PopTheme: React.FC<InternalThemeProps> = ({
         justifyContent: "center",
         alignItems: "center",
         gap: "15px 25px",
-        fontSize: "4.5rem",
+        fontSize: size,
         fontWeight: 900,
         fontFamily: "'Outfit', sans-serif",
         textAlign: "center",

@@ -18,10 +18,13 @@ export interface CaptionThemeProps {
   secondaryColor?: string;
   data: CaptionsData;
   theme?: string;
+  fontSize?: number | string;
 }
 
 export interface InternalThemeProps {
   primaryColor: string;
   secondaryColor: string;
   data: CaptionsData;
+  fontSize?: number | string;
 }
+
