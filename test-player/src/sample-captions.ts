@@ -4,76 +4,62 @@ export const sampleCaptions: CaptionsData = {
   lines: [
     {
       words: [
-        { text: "Have", start: 0.0, end: 0.3 },
+        { text: "When", start: 0.0, end: 0.3 },
         { text: "you", start: 0.3, end: 0.5 },
-        { text: "ever", start: 0.5, end: 0.7 },
-        { text: "wondered", start: 0.7, end: 1.1 },
-        { text: "why", start: 1.1, end: 1.3 },
-        { text: "most", start: 1.3, end: 1.6 },
-        { text: "creators", start: 1.6, end: 2.1 },
-        { text: "fail?", start: 2.1, end: 2.6 },
+        { text: "had", start: 0.5, end: 0.7 },
+        { text: "that", start: 0.7, end: 0.9 },
+        { text: "third", start: 0.9, end: 1.3 },
+        { text: "failure", start: 1.3, end: 1.8 },
+        { text: "in", start: 1.8, end: 2.0 },
+        { text: "a", start: 2.0, end: 2.2 },
+        { text: "row,", start: 2.2, end: 2.7 },
       ]
     },
     {
       words: [
-        { text: "It's", start: 2.7, end: 2.9 },
-        { text: "not", start: 2.9, end: 3.2 },
-        { text: "because", start: 3.2, end: 3.5 },
-        { text: "their", start: 3.5, end: 3.7 },
-        { text: "content", start: 3.7, end: 4.1 },
-        { text: "is", start: 4.1, end: 4.3 },
-        { text: "bad.", start: 4.3, end: 4.8 },
+        { text: "did", start: 2.8, end: 3.1 },
+        { text: "you", start: 3.1, end: 3.3 },
+        { text: "think,", start: 3.3, end: 3.8 },
+        { text: "I", start: 3.9, end: 4.1 },
+        { text: "need", start: 4.1, end: 4.4 },
+        { text: "to", start: 4.4, end: 4.6 },
+        { text: "pack", start: 4.6, end: 5.0 },
+        { text: "this", start: 5.0, end: 5.2 },
+        { text: "in?", start: 5.2, end: 5.8 },
       ]
     },
     {
       words: [
-        { text: "It's", start: 4.9, end: 5.1 },
-        { text: "because", start: 5.1, end: 5.4 },
-        { text: "they", start: 5.4, end: 5.6 },
-        { text: "don't", start: 5.6, end: 5.9 },
-        { text: "know", start: 5.9, end: 6.1 },
-        { text: "how", start: 6.1, end: 6.3 },
-        { text: "to", start: 6.3, end: 6.5 },
-        { text: "capture", start: 6.5, end: 7.0 },
-        { text: "attention.", start: 7.0, end: 7.6 },
+        { text: "Never.", start: 6.0, end: 7.0 },
       ]
     },
     {
       words: [
-        { text: "If", start: 7.7, end: 7.9 },
-        { text: "you", start: 7.9, end: 8.1 },
-        { text: "can", start: 8.1, end: 8.3 },
-        { text: "hook", start: 8.3, end: 8.6 },
-        { text: "them", start: 8.6, end: 8.8 },
-        { text: "in", start: 8.8, end: 9.0 },
-        { text: "the", start: 9.0, end: 9.2 },
-        { text: "first", start: 9.2, end: 9.5 },
-        { text: "three", start: 9.5, end: 9.8 },
-        { text: "seconds,", start: 9.8, end: 10.3 },
-        { text: "you", start: 10.3, end: 10.5 },
-        { text: "win.", start: 10.5, end: 11.0 },
+        { text: "Why", start: 7.2, end: 7.5 },
+        { text: "not?", start: 7.5, end: 8.2 },
       ]
     },
     {
       words: [
-        { text: "So", start: 11.1, end: 11.4 },
-        { text: "focus", start: 11.4, end: 11.8 },
-        { text: "on", start: 11.8, end: 12.0 },
-        { text: "the", start: 12.0, end: 12.2 },
-        { text: "hook,", start: 12.2, end: 12.6 },
-        { text: "master", start: 12.6, end: 13.1 },
-        { text: "the", start: 13.1, end: 13.3 },
-        { text: "story,", start: 13.3, end: 13.8 },
+        { text: "I", start: 8.5, end: 8.7 },
+        { text: "don't", start: 8.7, end: 9.0 },
+        { text: "ever", start: 9.0, end: 9.3 },
+        { text: "give", start: 9.3, end: 9.6 },
+        { text: "up.", start: 9.6, end: 10.2 },
       ]
     },
     {
       words: [
-        { text: "and", start: 13.9, end: 14.1 },
-        { text: "watch", start: 14.1, end: 14.4 },
-        { text: "your", start: 14.4, end: 14.6 },
-        { text: "views", start: 14.6, end: 15.0 },
-        { text: "explode", start: 15.0, end: 15.5 },
-        { text: "overnight!", start: 15.5, end: 16.2 },
+        { text: "I", start: 10.3, end: 10.5 },
+        { text: "mean,", start: 10.5, end: 10.9 },
+        { text: "I'd", start: 11.0, end: 11.3 },
+        { text: "have", start: 11.3, end: 11.5 },
+        { text: "to", start: 11.5, end: 11.7 },
+        { text: "be", start: 11.7, end: 11.9 },
+        { text: "dead", start: 11.9, end: 12.4 },
+        { text: "or", start: 12.4, end: 12.6 },
+        { text: "completely", start: 12.6, end: 13.2 },
+        { text: "incapacitated.", start: 13.2, end: 14.5 },
       ]
     }
   ]
