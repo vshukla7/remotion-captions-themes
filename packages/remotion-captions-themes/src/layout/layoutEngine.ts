@@ -10,9 +10,20 @@ function measureText(text: string, font: { size: number; family: string }): { wi
     if (context) {
       context.font = `${font.size}px ${font.family}`;
       const metrics = context.measureText(text);
+      
+      // Calculate based on the actual visual area the text stroke takes (bounding box)
+      const ascent = metrics.actualBoundingBoxAscent ?? (font.size * 0.85);
+      const descent = metrics.actualBoundingBoxDescent ?? (font.size * 0.25);
+      const height = ascent + descent;
+
+      // Use actual visual width if available, fallback to metrics.width
+      const width = (metrics.actualBoundingBoxLeft !== undefined && metrics.actualBoundingBoxRight !== undefined)
+        ? (metrics.actualBoundingBoxLeft + metrics.actualBoundingBoxRight)
+        : metrics.width;
+
       return {
-        width: metrics.width,
-        height: font.size * 1.2,
+        width: width || metrics.width,
+        height: height || (font.size * 1.2),
       };
     }
   }

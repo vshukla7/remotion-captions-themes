@@ -59,7 +59,7 @@ export const PoppinTheme: React.FC<InternalThemeProps> = ({
             key={index}
             style={{
               color,
-              fontFamily: '"Poppins", sans-serif',
+              fontFamily: "'Poppins', sans-serif",
               fontSize: scaledFontSize,
               fontWeight: 900,
               textTransform: "uppercase",
