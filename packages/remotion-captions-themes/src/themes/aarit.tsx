@@ -196,7 +196,6 @@ export const AaritTheme: React.FC<InternalThemeProps> = ({
                     // Letter-level spacing: normal inter-letter gap, plus
                     // the inter-word gap added only on a word's final letter.
                     marginRight: `${letterGapPx + (isLastLetterOfWord && !isLastWord ? wordGapPx : 0)}px`,
-                    textShadow,
                     transform: `scale(${letterScale})`,
                     transition: "transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.1)",
                     ...(isHighlighted
@@ -206,9 +205,11 @@ export const AaritTheme: React.FC<InternalThemeProps> = ({
                           backgroundPosition: highlightBackgroundPosition,
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
+                          filter: `drop-shadow(0 ${8 * scaleFactor}px ${9 * scaleFactor}px rgba(0,0,0,0.9)) drop-shadow(0 0 ${15 * scaleFactor}px ${glowColor}) drop-shadow(0 0 ${27 * scaleFactor}px ${glowColor}99)`,
                         }
                       : {
                           color: primaryColor,
+                          textShadow,
                         }),
                   }}
                 >
