@@ -137,6 +137,8 @@ export default function App() {
               <option value="simple-one-word">🔤 Simple One Word Theme</option>
               <option value="kinetic-01">📐 Kinetic 01 (Boilerplate)</option>
               <option value="kinetic-02">📏 Kinetic 02 (Boilerplate)</option>
+              <option value="podcast">🎤 Podcast Theme</option>
+
             </select>
           </div>
 

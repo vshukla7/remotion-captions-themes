@@ -14,6 +14,7 @@ import { AaritTheme } from "./themes/aarit";
 import { SoftAITheme } from "./themes/soft-ai";
 import { GamingStreamTheme } from "./themes/gaming-stream";
 import { SimpleOneWordTheme } from "./themes/simple-one-word";
+import { PodcastTheme } from "./themes/podcast";
 
 export const themeRegistry: Record<string, React.FC<InternalThemeProps>> = {
   pop: PopTheme,
@@ -30,6 +31,7 @@ export const themeRegistry: Record<string, React.FC<InternalThemeProps>> = {
   "soft-ai": SoftAITheme,
   "gaming-stream": GamingStreamTheme,
   "simple-one-word": SimpleOneWordTheme,
+  podcast: PodcastTheme,
 } as const;
 
 export type ThemeName = keyof typeof themeRegistry;

@@ -145,8 +145,6 @@ export const AaritTheme: React.FC<InternalThemeProps> = ({
 
               const isLastLetterOfWord = letterIndex === letters.length - 1;
 
-              const glowColor = isHighlighted ? secondaryColor : primaryColor;
-
               // ── Highlighted letters: flat secondaryColor, no shine ──
               const textShadow = `0 ${4 * scaleFactor}px ${8 * scaleFactor}px rgba(0,0,0,0.85), 0 ${2 * scaleFactor}px ${4 * scaleFactor}px rgba(0,0,0,0.7)`;
 
