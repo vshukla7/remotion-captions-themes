@@ -1,11 +1,11 @@
-# @vshukla7/remotion-captions-themes
+# remotion-captions-themes
 
 A Remotion package containing a suite of beautiful, modern, and highly interactive caption themes. Ideal for social media reels, TikToks, YouTube shorts, and video editing pipelines.
 
 ## Installation
 
 ```bash
-npm install @vshukla7/remotion-captions-themes
+npm install remotion-captions-themes
 ```
 
 Note: This package requires `remotion`, `react`, and `react-dom` as peer dependencies.
@@ -15,7 +15,7 @@ Note: This package requires `remotion`, `react`, and `react-dom` as peer depende
 Import the `<CaptionTheme />` component and pass the required structured word-level captions JSON:
 
 ```tsx
-import { CaptionTheme } from "@vshukla7/remotion-captions-themes";
+import { CaptionTheme } from "remotion-captions-themes";
 
 const MyComposition = () => {
   const captionsData = {
