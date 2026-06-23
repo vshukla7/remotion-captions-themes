@@ -2,7 +2,7 @@
 
 A Remotion package containing a suite of beautiful, modern, and highly interactive caption themes. Ideal for social media reels, TikToks, YouTube shorts, and video editing pipelines.
 
-<video src="https://ik.imagekit.io/t9llbcgyv/captions_sample_compressed.mp4" controls="controls" muted="muted" playsinline="playsinline" width="100%"></video>
+<video src="https://github.com/user-attachments/assets/36080fb9-6677-427c-b66b-57ed05612ea4" controls="controls" muted="muted" playsinline="playsinline" width="100%"></video>
 
 *Note: This preview video is heavily compressed for fast loading on GitHub. The actual rendered animations are crystal clear and smooth.*
 
