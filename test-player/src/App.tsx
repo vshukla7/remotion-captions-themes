@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Player } from "@remotion/player";
 import { AbsoluteFill } from "remotion";
-import { CaptionTheme, CaptionsData } from "@vshukla7/remotion-captions-themes";
+import { CaptionTheme, CaptionsData } from "../../src";
 import { sampleCaptions } from "./sample-captions";
 
 const VideoComposition: React.FC<{

@@ -1,4 +1,4 @@
-import { CaptionsData } from "@vshukla7/remotion-captions-themes";
+import { CaptionsData } from "../../src";
 
 export const sampleCaptions: CaptionsData = {
   lines: [
